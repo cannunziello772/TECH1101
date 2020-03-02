@@ -38,7 +38,6 @@ function submitOnclick(){
         error.appendChild(errorMsg);
         document.body.appendChild(error);
     }else{
-        
         const taxAmount = calculateTax(income.value);
         taxOwed.textContent = taxAmount.toFixed(2);
         taxRate.textContent = (taxAmount/income.value*100).toFixed(2);
@@ -55,5 +54,4 @@ function clearOnclick(){
 
 submit.addEventListener("click", submitOnclick);
 clear.addEventListener("click", clearOnclick);
-
 
