@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: white;
+    width: 100%;
+}
+
+.main-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: white;
+    font-size: 100%;
+    position: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    text-decoration: none;
+    text-decoration-line: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-menu:hover{
+    background-color: gray;
+}
+
+#findStore{
+    display: flex;
+    box-sizing: border-box;
+    top: 20px;
+    width: 100%;
+    transform: translate(3%);
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+h1{
+    text-align: center;
+}

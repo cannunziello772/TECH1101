@@ -1,0 +1,43 @@
+<!DOCTYPE html >
+<html lang = "en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandy Brewing company </title>
+    <link rel = "stylesheet" href="findStores.css">
+</head>
+
+<body>
+        <ul class="main-menu">
+             <li><a href = "index.html">Home</a></li>
+             <li><a href = "flavours.html">Our Flavours</a></li>
+             <li><a href = "aboutBeer.html">About Us </a></li>
+             <li><a href = "events.html">Events</a></li>
+             <li><a href = "followUs.html">Follow Us </a></li>
+             <li><a href = "contactUs.html">Contact US </a></li>
+         </ul>
+
+    <h1> Our Products are available in Following Stores -: </h1>
+     
+    <div class="findstorebox" alt="map">  </div>
+    <div id="findStore" style="width: 94%;height:700px;"></div>
+     
+     <script>
+     function popNx(){
+
+        var  maping = {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+
+        var uio = new google.maps.Map(document.getElementById("findStore"),maping);
+     }
+     </script>
+     
+     <script src="https://maps.googleapis.com/maps/api/js?key=
+     AIzaSyCKqltT8ONUNQBkAUMhEx9zvpcomoNxtB4&callback=popNx"></script>
+    
+  
+     </body>
+     </html> 
